@@ -13,7 +13,7 @@ import {
  * App Component is the highest level real component in the application, it is the parent of the routes and an
  * an ancestors of all other compoents
  */
-const AppDisplay =  ()=>(
+const AppDisplay = ()=>(
     <div>
         <div>
             <Link to={`/`}>
