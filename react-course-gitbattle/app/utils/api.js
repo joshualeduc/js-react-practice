@@ -1,6 +1,7 @@
-const id = "CLIENT_ID"
-const sec = "SECRET_ID"
+const id = 'CLIENT_ID'
+const sec = 'SECRET_ID'
 const params = `?client_id=${id}&client_secret=${sec}`
+const { fetch } = window
 
 function getErrorMsg (message, username) {
   if (message === 'Not Found') {
@@ -35,7 +36,7 @@ function getRepos (username) {
 }
 
 function getStarCount (repos) {
-  return repos.reduce((count, { stargazers_count }) => count + stargazers_count, 0)
+  return repos.reduce((count, { stargazers_count: stargazersCount }) => count + stargazersCount, 0)
 }
 
 function calculateScore (followers, repos) {
@@ -46,7 +47,7 @@ function getUserData (player) {
   return Promise.all([
     getProfile(player),
     getRepos(player)
-  ]).then(([ profile, repos ]) => ({
+  ]).then(([profile, repos]) => ({
     profile,
     score: calculateScore(profile.followers, repos)
   }))
@@ -75,5 +76,5 @@ export function fetchPopularRepos (language) {
 
       return data.items
     })
-    //instead of putting .catch here, we will put it in where this function gets called in the ui layer to give user feedback
+    // instead of putting .catch here, we will put it in where this function gets called in the ui layer to give user feedback
 }

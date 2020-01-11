@@ -50,5 +50,5 @@ export default function Tooltip ({ text, children, hovering }) {
 // }
 
 Tooltip.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
 }

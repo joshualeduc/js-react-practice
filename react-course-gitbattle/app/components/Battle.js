@@ -30,7 +30,7 @@ function Instructions () {
   )
 }
 
-//using class fields instead of constructor in this class
+// using class fields instead of constructor in this class
 class PlayerInput extends React.Component {
   state = {
     username: ''
@@ -124,7 +124,7 @@ export default class Battle extends React.Component {
 
     this.state = {
       playerOne: null,
-      playerTwo: null,
+      playerTwo: null
     }
 
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -147,7 +147,7 @@ export default class Battle extends React.Component {
     const { playerOne, playerTwo } = this.state
 
     return (
-      <React.Fragment>
+      <>
         <Instructions />
 
         <div className='players-container'>
@@ -155,27 +155,25 @@ export default class Battle extends React.Component {
           <div className='row space-around'>
             {playerOne === null
               ? <PlayerInput
-                  label='Player One'
-                  onSubmit={(player) => this.handleSubmit('playerOne', player)}
-                />
+                label='Player One'
+                onSubmit={(player) => this.handleSubmit('playerOne', player)}
+              />
               : <PlayerPreview
-                  username={playerOne}
-                  label='Player One'
-                  onReset={() => this.handleReset('playerOne')}
-                />
-            }
+                username={playerOne}
+                label='Player One'
+                onReset={() => this.handleReset('playerOne')}
+              />}
 
             {playerTwo === null
               ? <PlayerInput
-                  label='Player Two'
-                  onSubmit={(player) => this.handleSubmit('playerTwo', player)}
-                />
+                label='Player Two'
+                onSubmit={(player) => this.handleSubmit('playerTwo', player)}
+              />
               : <PlayerPreview
-                  username={playerTwo}
-                  label='Player Two'
-                  onReset={() => this.handleReset('playerTwo')}
-                />
-            }
+                username={playerTwo}
+                label='Player Two'
+                onReset={() => this.handleReset('playerTwo')}
+              />}
           </div>
 
           {playerOne && playerTwo && (
@@ -190,7 +188,7 @@ export default class Battle extends React.Component {
             </Link>
           )}
         </div>
-      </React.Fragment>
+      </>
     )
   }
 }

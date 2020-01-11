@@ -24,7 +24,7 @@ class App extends React.Component {
     }
   }
 
-  render() {
+  render () {
     return (
       <Router>
         <ThemeProvider value={this.state}>

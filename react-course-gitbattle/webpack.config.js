@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       { test: /\.(js)$/, use: 'babel-loader' },
-      { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] }
     ]
   },
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
@@ -21,7 +21,7 @@ module.exports = {
       template: 'app/index.html'
     }),
     new CopyPlugin([
-      { from : '_redirects' }
+      { from: '_redirects' }
     ])
   ],
   devServer: {

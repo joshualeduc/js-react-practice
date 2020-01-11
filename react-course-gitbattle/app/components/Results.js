@@ -1,6 +1,6 @@
 import React from 'react'
 import { battle } from '../utils/api'
-import { FaCompass, FaBriefcase, FaUsers, FauserFriends, FaCode, FaUser } from 'react-icons/fa'
+import { FaCompass, FaBriefcase, FaUser } from 'react-icons/fa'
 import Card from './Card'
 import PropTypes from 'prop-types'
 import Loading from './Loading'
@@ -60,7 +60,7 @@ export default class Results extends React.Component {
 
   componentDidMount () {
     const { playerOne, playerTwo } = queryString.parse(this.props.location.search)
-    battle([ playerOne, playerTwo ])
+    battle([playerOne, playerTwo])
       .then((players) => {
         this.setState({
           winner: players[0],
@@ -80,7 +80,7 @@ export default class Results extends React.Component {
     const { winner, loser, error, loading } = this.state
 
     if (loading === true) {
-      return <Loading text='Battling'/>
+      return <Loading text='Battling' />
     }
 
     if (error) {
@@ -89,8 +89,7 @@ export default class Results extends React.Component {
       )
     }
     return (
-      <React.Fragment>
-      
+      <>
         <div className='grid space-around container-sm'>
           <Card
             header={winner.score === loser.score ? 'Tie' : 'Winner'}
@@ -112,10 +111,10 @@ export default class Results extends React.Component {
             <ProfileList profile={loser.profile} />
           </Card>
         </div>
-        <Link className="btn dark-btn btn-space" to='/battle'>
+        <Link className='btn dark-btn btn-space' to='/battle'>
           Reset
         </Link>
-      </React.Fragment>
+      </>
     )
   }
 }

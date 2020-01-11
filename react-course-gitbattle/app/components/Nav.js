@@ -13,25 +13,27 @@ export default function Nav () {
         <nav className='row space-between'>
           <ul className='row nav'>
             <li>
-              <NavLink 
-                exact 
-                to='/' 
-                className='nav-link' 
-                activeStyle={activeStyle}>
+              <NavLink
+                exact
+                to='/'
+                className='nav-link'
+                activeStyle={activeStyle}
+              >
                   Popular
-                </NavLink>
+              </NavLink>
             </li>
             <li>
-              <NavLink 
-                to='/battle' 
-                className='nav-link' 
-                activeStyle={activeStyle}>
+              <NavLink
+                to='/battle'
+                className='nav-link'
+                activeStyle={activeStyle}
+              >
                   Battle
               </NavLink>
             </li>
           </ul>
           <button
-            style={{fontSize: 30}}
+            style={{ fontSize: 30 }}
             className='btn-clear'
             onClick={toggleTheme}
           >

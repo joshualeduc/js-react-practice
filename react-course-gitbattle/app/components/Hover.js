@@ -5,29 +5,29 @@ export default class Hover extends React.Component {
     super(props)
 
     this.state = {
-      hovering: false,
+      hovering: false
     }
 
-    this.mouseOver = this.mouseOver.bind(this)
-    this.mouseOut = this.mouseOut.bind(this)
+    this.handleMouseOver = this.handleMouseOver.bind(this)
+    this.handleMouseOut = this.handleMouseOut.bind(this)
   }
 
-  mouseOver () {
+  handleMouseOver () {
     this.setState({
       hovering: true
     })
   }
 
-  mouseOut () {
+  handleMouseOut () {
     this.setState({
       hovering: false
     })
   }
 
-  //this.props.render could be used instead of children with commented code in Tooltip
+  // this.props.render could be used instead of children with commented code in Tooltip
   render () {
     return (
-      <div onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}>
+      <div onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}>
         {this.props.children(this.state.hovering)}
       </div>
     )
