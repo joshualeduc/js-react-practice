@@ -1,42 +1,68 @@
-<h1 align="center">
-  <a href="https://tylermcginnis.com"><img src="https://tylermcginnis.com/tylermcginnis_glasses-300.png" alt="TylerMcGinnis.com Logo" width="300"></a>
-  <br>
-</h1>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<h3 align="center">React Course Curriculum - <a href="https://tm.dev/react-course-curriculum/">Hacker News Clone</a></h3>
+## Available Scripts
 
-### Info
+In the project directory, you can run:
 
-This is the repository for TylerMcGinnis.com's "React" course curriculum project.
+### `yarn start`
 
-For more information on the course, visit __[tm.dev/courses/react](https://tm.dev/courses/react/)__.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Project
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-This is a (soft) "Hacker News" clone. 
+### `yarn test`
 
-You can view the final project at __[tm.dev/react-course-curriculum](https://tm.dev/react-course-curriculum/)__
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Solution
+### `yarn build`
 
-If you get stuck, you can view my solution by checking out the `solution` branch. 
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-You will need to use React's `dangerouslySetInnerHTML` prop to show the HTML posts that the API gives you. We didn't cover it in the course but you can [read about it here](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml).
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-### Approaches
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-There are a few different ways you can approach this, each with varying difficulties. 
+### `yarn eject`
 
-+ Hardest: Look at the [finished project](https://tm.dev/react-course-curriculum/) and build it. This is obviously the hardest approach but the one you'll gain the most learning from. The only thing that you'll need is the documentation for the [Hacker News API](https://github.com/HackerNews/API).
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-+ Whatever word is between "Hardest" and "Easiest": Copy my [api.js](https://github.com/tylermcginnis/react-course-curriculum/blob/solution/app/utils/api.js) file to your project then build the app. After all, you're here to learn React, not the Hacker News API. If you took this approach, I wouldn't blame you.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-+ Easiest: Take 10-15 minutes to walk through [my code](https://github.com/tylermcginnis/react-course-curriculum/tree/solution). Notice how I approached different problems and how you may or may not want to do something similar. From there, start building and reference my project only as you need it.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-### Project Preview
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Light Mode          |  Dark Mode
-:-------------------------:|:-------------------------:
-![](https://user-images.githubusercontent.com/2933430/55542659-c0b0e100-5684-11e9-9877-20f218c8fde5.png) ![](https://user-images.githubusercontent.com/2933430/55542657-c0184a80-5684-11e9-9473-8a153a232301.png) ![](https://user-images.githubusercontent.com/2933430/55542656-c0184a80-5684-11e9-923b-2836944a474a.png) |  ![](https://user-images.githubusercontent.com/2933430/55542654-c0184a80-5684-11e9-9436-9b3ae973e8b5.png) ![](https://user-images.githubusercontent.com/2933430/55542658-c0b0e100-5684-11e9-821f-03dc5f80c97c.png) ![](https://user-images.githubusercontent.com/2933430/55542655-c0184a80-5684-11e9-832b-657b683d0625.png)
+## Learn More
 
-### [Tyler McGinnis](https://twitter.com/tylermcginnis)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
