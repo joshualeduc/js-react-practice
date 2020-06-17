@@ -16,8 +16,9 @@ function App () {
       <Navbar />
       <Switch>
         <Route exact path='/'><NewsList /></Route>
-        <Route path='/comments'><Comments /></Route>
-        <Route path='/user'><User /></Route>
+        <Route exact path='/new'><NewsList /></Route>
+        <Route path='/comments/:storyId'><Comments /></Route>
+        <Route path='/user/:userId'><User /></Route>
       </Switch>
     </Router>
   )

@@ -6,9 +6,7 @@ export default function Navbar () {
     <nav>
       <ul>
         <li><Link to='/'>Top</Link></li>
-        <li><Link to='/'>New</Link></li>
-        <li><Link to='/user'>User</Link></li>
-        <li><Link to='/comments'>Comments</Link></li>
+        <li><Link to='/new'>New</Link></li>
       </ul>
       <span role='img' aria-label='flashlight'>🔦</span>
     </nav>
