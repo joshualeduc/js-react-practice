@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todos/Goals</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.0/redux.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  <script src="https://tylermcginnis.com/goals-todos-api/index.js"></script>
+</head>
+<body>
+  <div>
+    <h1>Todo List</h1>
+    <input id="todo" type="text" placeholder="Add Todo">
+    <button id="todoBtn">Add Todo</button>
+    <ul id="todos"></ul>
+  </div>
+  <div>
+    <h1>Goals</h1>
+    <input type="text" id="goal" placeholder="Add Goal">
+    <button id="goalBtn">Add Goal</button>
+    <ul id="goals"></ul>
+  </div>
+
+  <hr />
+
+  <div id="app"></div>
+
+<script src="index.js"></script>
+<script type="text/babel" src="reactApp.js"></script>
+</body>
+</html>
